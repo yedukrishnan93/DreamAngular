@@ -1,0 +1,29 @@
+<app-nav-bar></app-nav-bar>
+<div class="contanier">
+  <div class="row">
+    <div class="col-sm register-box">
+      
+        <label>Username</label><br>
+        <input type="text" name="username" [(ngModel)]="username"><br>
+        <label>Email id</label> <br>
+        <input type="text" name="mailid"[(ngModel)]="mailid"><br>
+        <label>Password</label><br>
+        <input type="password" name="password"[(ngModel)]="Password"><br>
+        <label>Confirm Password</label><br>
+        <input type="password" name="cpassword"> &nbsp;
+        <button class="btn btn-secondary" (click)="regiter()">Register</button>
+
+      
+    </div>
+    <div class="col-sm">
+        <img src="/assets/imgs/uhome.jpg" class="login-img">
+      </div>
+
+  </div>
+  <div class="row">
+<div *ngIf="responseFlag" class="register-message">
+  <label>User Registerd sucessFully</label>
+</div>
+  </div>
+
+</div>

@@ -1,0 +1,23 @@
+<app-nav-bar></app-nav-bar>
+<div class="contanier">
+  <div class="row">
+    <div class="col-sm login-box">
+      <form [formGroup]="loginForm" action="">
+  <label>Username</label><br>
+  <input matInputtype="text" name="username"[(ngModel)]="username" formControlName="username">
+  <br>
+  <label>
+    Password
+  </label><br>
+  <input matInput type="password" name="password" [(ngModel)]="password" formControlName="password">
+  <button class="btn btn-success" (click)="authentication()">Login</button><br>
+</form>
+  Don't have an account? please signup <a href="register">Here</a>
+    </div>
+    <div class="col-sm">
+      <img src="/assets/imgs/slide.jpg" class="login-img">
+    </div>
+
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,99 @@
+<app-user-nav-bar></app-user-nav-bar>
+<body>
+  <div class="contanier">
+    <div class="row">
+      <div class="col-sm event-create-box">
+        <h2>Create an Event</h2>
+        
+          Name of Event <br>
+          <input type="text" name="eventName"><br>
+          Event Date<br>
+            From:<input type="date" name="eventDate">
+            To:<input type="date" name="eventDate"><br>
+          Contact No<br>
+          <input type="text" name="phoneNo"> &nbsp;
+          <button class="btn btn-secondary" (click)="createEvent()">Create</button>
+       
+      </div>
+      <div class="col-sm event-create-box" *ngIf="venueBooking">
+        <div class="col-sm ">
+            <input type="checkbox" name="venueBook"><h2>Book Venue</h2> 
+            Counntry &nbsp;
+            <select name="country">
+               
+                <option>India</option>
+               </select><br>
+           State&nbsp;
+           <select name="country">    
+              <option>Kerala</option>
+             </select><br>
+            District&nbsp;
+            <select name="District">
+                <option>Kollam</option>
+               </select><br>
+            Aditorium/openStage&nbsp;
+           <select name="venueType">
+            <option>Aditorium</option>
+            <option>OpenStage</option>
+           </select><br>
+           Venues Available&nbsp;
+           <select name="venue">
+            <option>Surabhi Aditorium</option>
+           </select>&nbsp;
+           
+          </div>
+        </div>
+        <div class="col-sm event-create-box" *ngIf="venueBooking">
+            <img src="/assets/imgs/royal.jpg" class="venue-img">
+          </div>
+    </div>
+    <div class="row">
+      <div class="col-sm event-create-box" *ngIf="venueBooking">
+          <input type="checkbox" name="venueBook"><h2>Book Food</h2> 
+          Food Item &nbsp;
+          <select name="country">
+             
+              <option>India</option>
+             </select>
+             No of Items <input type="number"> <br>
+             Food Item &nbsp;
+          <select name="country">
+             
+              <option>India</option>
+             </select>
+             No of Items <input type="number"> <br>
+             Food Item &nbsp;
+          <select name="country">
+             
+              <option>India</option>
+             </select>
+             No of Items <input type="number"> <br>
+             Food Item &nbsp;
+          <select name="country">
+             
+              <option>India</option>
+             </select>
+             No of Items <input type="number"> <br>
+             Food Item &nbsp;
+          <select name="country">
+             
+              <option>India</option>
+             </select>
+             No of Items <input type="number"> <br>
+             Food Item &nbsp;
+          <select name="country">
+             
+              <option>India</option>
+             </select>
+             No of Items <input type="number">
+             &nbsp;
+             <button class="btn btn-success">Book Event</button>
+         
+      </div>
+      <div class="col-sm event-create-box" *ngIf="venueBooking">
+          <img src="/assets/imgs/cake.jpg" class="venue-img">
+        </div>
+    </div>
+
+  </div>
+</body>
